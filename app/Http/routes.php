@@ -14,4 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-route::resource('admin/modelos','ModeloController');
+Route::resource('admin/perfil','PerfilController');

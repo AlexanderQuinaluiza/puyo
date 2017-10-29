@@ -4,7 +4,7 @@ namespace sisAdminPuyo\Http\Requests;
 
 use sisAdminPuyo\Http\Requests\Request;
 
-class ModeloFormRequest extends Request
+class PerfilFormRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,8 @@ class ModeloFormRequest extends Request
     public function rules()
     {
         return [
-            'm_nombre'=>'placeholder:Administrador|required|max:50',
-            'm_descripcion'=>'max:100'
-            //
+            //reglas nombre de perfil 
+            'nombre'=>'required|max(50)';
         ];
     }
 }
